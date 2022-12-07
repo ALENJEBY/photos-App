@@ -1,0 +1,32 @@
+<app-navbar></app-navbar>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-lg-12 col-md-12 col-xl-12 col-xxl-12">
+
+
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">albumId</th>
+                    <th scope="col">id</th>
+                    <th scope="col">title</th>
+                    <th scope="col">thumbnailUrl</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of photo">
+                <th scope="row">{{i.albumId}}</th>
+                    <td>{{i.id}}</td>
+                    <td>{{i.title}}</td>
+                    <td><img src="{{i.thumbnailUrl}}" alt=""></td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+
+
+        </div>
+    </div>
+</div>
